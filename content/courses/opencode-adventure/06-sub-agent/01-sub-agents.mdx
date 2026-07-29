@@ -1,0 +1,31 @@
+# Sub Agent
+
+## Sub Agent คืออะไร?
+
+Sub Agent คือ **Agent ย่อย** ที่ช่วยคุณทำงานหลายอย่างพร้อมกัน
+
+## ทำไมต้องใช้ Sub Agent?
+
+ปกติ Agent หลักทำงานทีละอย่าง:
+1. ทำเสร็จ → 2. ทำเสร็จ → 3. ทำเสร็จ
+
+แต่ Sub Agent ทำได้หลายอย่างพร้อมกัน!
+
+## การสร้าง Sub Agent
+
+```javascript
+const subAgent = await opencode.createAgent({
+  name: "researcher",
+  role: "ค้นหาข้อมูลเกี่ยวกับ AI",
+  tasks: ["หาข่าว AI ล่าสุด", "หา papers ใหม่"]
+});
+```
+
+## ตัวอย่างการใช้งาน
+
+```
+@opencode ช่วยหาข้อมูล 3 หัวข้อนี้พร้อมกัน:
+1. React 19 มีอะไรใหม่
+2. Next.js 15 มีอะไรใหม่
+3. Tailwind 4 มีอะไรใหม่
+```

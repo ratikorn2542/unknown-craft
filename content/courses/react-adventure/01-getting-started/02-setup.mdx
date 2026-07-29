@@ -1,0 +1,57 @@
+# Setup โปรเจค
+
+## วิธีสร้าง React Project
+
+### วิธีที่ 1: Create Next App (แนะนำ)
+
+```bash
+npx create-next-app@latest my-portfolio
+```
+
+ตั้งค่า:
+- TypeScript: Yes
+- Tailwind: Yes
+- ESLint: Yes
+- App Router: Yes
+- Src Directory: No
+- Import Alias: @/*
+
+### วิธีที่ 2: Vite
+
+```bash
+npm create vite@latest my-app -- --template react
+cd my-app
+npm install
+npm run dev
+```
+
+## โครงสร้างโปรเจค
+
+```
+my-portfolio/
+├── app/
+│   ├── layout.tsx    # Root layout
+│   ├── page.tsx      # หน้าแรก
+│   └── globals.css   # CSS หลัก
+├── components/       # Components ต่างๆ
+├── public/           # Static files
+├── package.json
+└── next.config.js
+```
+
+## การติดตั้ง Dependencies
+
+```bash
+# UI Libraries
+npm install lucide-react
+
+# Animation
+npm install framer-motion
+
+# Styling (ถ้าไม่ได้เลือกตอนสร้าง)
+npm install tailwindcss
+```
+
+## พร้อมแล้ว!
+
+เริ่มสร้างโปรเจคได้เลย! 🚀

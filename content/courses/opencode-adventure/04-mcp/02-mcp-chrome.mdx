@@ -1,0 +1,40 @@
+# Chrome DevTools MCP
+
+## Chrome DevTools MCP คืออะไร?
+
+Chrome DevTools MCP ช่วยให้ Opencode สามารถ:
+- 🌐 เข้าถึง DevTools ของ Chrome
+- 📸 ถ่าย screenshot
+- 🎯 inspect elements
+- 📝 ดู/แก้ไข DOM
+
+## การติดตั้ง
+
+### ขั้นตอนที่ 1: ติดตั้ง Chrome Extension
+
+```bash
+# ดาวน์โหลด Chrome Extension
+```
+
+### ขั้นตอนที่ 2: ตั้งค่าใน Opencode
+
+```json
+{
+  "mcpServers": {
+    "chrome-devtools": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-chrome-devtools"]
+    }
+  }
+}
+```
+
+## การใช้งาน
+
+```
+@opencode ถ่าย screenshot หน้าเว็บนี้ให้หน่อย
+```
+
+```
+@opencode ดู console logs ของหน้านี้ให้หน่อย
+```

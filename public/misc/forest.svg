@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 600" width="1920" height="600">
+  <!-- Sky gradient (dappled light) -->
+  <defs>
+    <linearGradient id="skyForest" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1B4D3E"/>
+      <stop offset="50%" style="stop-color:#2D5A3D"/>
+      <stop offset="100%" style="stop-color:#1A3D2B"/>
+    </linearGradient>
+    <filter id="noise">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1920" height="600" fill="url(#skyForest)"/>
+
+  <!-- Light rays (sunbeams through trees) -->
+  <g fill="#4A7C4A" opacity="0.15">
+    <polygon points="400,0 450,0 550,600 480,600"/>
+    <polygon points="800,0 860,0 980,600 900,600"/>
+    <polygon points="1200,0 1250,0 1350,600 1280,600"/>
+    <polygon points="1550,0 1600,0 1700,600 1630,600"/>
+  </g>
+
+  <!-- Background trees (darker, further) -->
+  <g fill="#1B4332">
+    <polygon points="50,400 100,200 150,400"/>
+    <polygon points="100,400 160,180 220,400"/>
+    <polygon points="200,400 270,190 340,400"/>
+    <polygon points="350,400 420,200 490,400"/>
+    <polygon points="450,400 530,170 610,400"/>
+    <polygon points="580,400 660,190 740,400"/>
+    <polygon points="720,400 800,180 880,400"/>
+    <polygon points="850,400 930,200 1010,400"/>
+    <polygon points="980,400 1060,170 1140,400"/>
+    <polygon points="1110,400 1190,190 1270,400"/>
+    <polygon points="1240,400 1320,180 1400,400"/>
+    <polygon points="1370,400 1450,200 1530,400"/>
+    <polygon points="1500,400 1580,170 1660,400"/>
+    <polygon points="1630,400 1710,190 1790,400"/>
+    <polygon points="1760,400 1840,180 1920,400"/>
+  </g>
+
+  <!-- Middle trees -->
+  <g fill="#155724">
+    <polygon points="0,500 60,300 120,500"/>
+    <polygon points="100,500 170,280 240,500"/>
+    <polygon points="220,500 300,290 380,500"/>
+    <polygon points="360,500 450,270 540,500"/>
+    <polygon points="500,500 590,285 680,500"/>
+    <polygon points="650,500 740,275 830,500"/>
+    <polygon points="800,500 890,290 980,500"/>
+    <polygon points="950,500 1040,270 1130,500"/>
+    <polygon points="1100,500 1190,285 1280,500"/>
+    <polygon points="1250,500 1340,275 1430,500"/>
+    <polygon points="1400,500 1490,290 1580,500"/>
+    <polygon points="1550,500 1640,270 1730,500"/>
+    <polygon points="1700,500 1790,285 1880,500"/>
+  </g>
+
+  <!-- Foreground trees (bright, close) -->
+  <g fill="#228B22">
+    <polygon points="-20,600 50,350 120,600"/>
+    <polygon points="150,600 250,320 350,600"/>
+    <polygon points="400,600 500,340 600,600"/>
+    <polygon points="650,600 750,315 850,600"/>
+    <polygon points="900,600 1000,335 1100,600"/>
+    <polygon points="1150,600 1250,320 1350,600"/>
+    <polygon points="1400,600 1500,340 1600,600"/>
+    <polygon points="1650,600 1750,325 1850,600"/>
+    <polygon points="1850,600 1920,350 2000,600"/>
+  </g>
+
+  <!-- Tree trunks -->
+  <g fill="#3D2914">
+    <rect x="40" y="500" width="20" height="100"/>
+    <rect x="280" y="490" width="25" height="110"/>
+    <rect x="540" y="495" width="22" height="105"/>
+    <rect x="800" y="488" width="28" height="112"/>
+    <rect x="1050" y="492" width="24" height="108"/>
+    <rect x="1300" y="490" width="26" height="110"/>
+    <rect x="1550" y="495" width="23" height="105"/>
+    <rect x="1800" y="488" width="27" height="112"/>
+  </g>
+
+  <!-- Ground cover -->
+  <rect x="0" y="560" width="1920" height="40" fill="#2D5A2D"/>
+  <rect x="0" y="555" width="1920" height="8" fill="#3D7A3D"/>
+
+  <!-- Ferns/grass details -->
+  <g fill="#4A7C4A">
+    <ellipse cx="80" cy="565" rx="30" ry="12"/>
+    <ellipse cx="200" cy="570" rx="25" ry="10"/>
+    <ellipse cx="350" cy="562" rx="35" ry="14"/>
+    <ellipse cx="500" cy="568" rx="28" ry="11"/>
+    <ellipse cx="680" cy="564" rx="32" ry="13"/>
+    <ellipse cx="850" cy="571" rx="26" ry="10"/>
+    <ellipse cx="1000" cy="565" rx="30" ry="12"/>
+    <ellipse cx="1150" cy="569" rx="24" ry="9"/>
+    <ellipse cx="1320" cy="563" rx="34" ry="14"/>
+    <ellipse cx="1480" cy="567" rx="28" ry="11"/>
+    <ellipse cx="1650" cy="564" rx="31" ry="12"/>
+    <ellipse cx="1820" cy="570" rx="27" ry="10"/>
+  </g>
+
+  <!-- Mushrooms -->
+  <g>
+    <ellipse cx="180" cy="558" rx="12" ry="6" fill="#8B0000"/>
+    <rect x="176" y="558" width="8" height="12" fill="#F5F5DC"/>
+    <circle cx="175" cy="555" r="2" fill="#FFFFFF"/>
+    <circle cx="182" cy="553" r="1.5" fill="#FFFFFF"/>
+
+    <ellipse cx="750" cy="560" rx="10" ry="5" fill="#8B0000"/>
+    <rect x="746" y="560" width="7" height="10" fill="#F5F5DC"/>
+    <circle cx="746" cy="557" r="1.5" fill="#FFFFFF"/>
+
+    <ellipse cx="1380" cy="557" rx="14" ry="7" fill="#8B0000"/>
+    <rect x="1375" y="557" width="9" height="14" fill="#F5F5DC"/>
+    <circle cx="1374" cy="554" r="2" fill="#FFFFFF"/>
+    <circle cx="1382" cy="552" r="1.5" fill="#FFFFFF"/>
+
+    <ellipse cx="1720" cy="559" rx="11" ry="5" fill="#8B0000"/>
+    <rect x="1716" y="559" width="8" height="11" fill="#F5F5DC"/>
+    <circle cx="1716" cy="556" r="1.5" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Fireflies (subtle glow) -->
+  <g fill="#FFFF00" opacity="0.6">
+    <circle cx="300" cy="400" r="3"/>
+    <circle cx="600" cy="350" r="2.5"/>
+    <circle cx="900" cy="380" r="3"/>
+    <circle cx="1200" cy="360" r="2.5"/>
+    <circle cx="1500" cy="390" r="3"/>
+    <circle cx="450" cy="420" r="2"/>
+    <circle cx="1050" cy="410" r="2.5"/>
+    <circle cx="1650" cy="405" r="2"/>
+  </g>
+</svg>

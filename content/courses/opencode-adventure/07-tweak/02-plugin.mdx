@@ -1,0 +1,32 @@
+# Plugin
+
+## Plugin คืออะไร?
+
+Plugin คือ **ส่วนเสริม** ที่เพิ่มความสามารถให้ Opencode
+
+## การติดตั้ง Plugin
+
+```bash
+opencode plugin install <plugin-name>
+```
+
+## Plugins ยอดนิยม
+
+| Plugin | คำอธิบาย |
+|--------|----------|
+| `code-formatter` | จัดรูปแบบโค้ด |
+| `git-integration` | เชื่อมกับ Git |
+| `deploy-helper` | ช่วย deploy |
+| `test-generator` | สร้าง tests อัตโนมัติ |
+
+## การสร้าง Plugin ของตัวเอง
+
+```javascript
+module.exports = {
+  name: 'my-plugin',
+  version: '1.0.0',
+  execute: async (context) => {
+    // ทำสิ่งที่ต้องการ
+  }
+};
+```

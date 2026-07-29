@@ -1,0 +1,19 @@
+.momo-tip {
+  background: linear-gradient(135deg, #FFF0F5 0%, #FFE4EC 100%);
+  border: 1px solid #FFB6C1;
+}
+
+.dark .momo-tip {
+  background: linear-gradient(135deg, #2D2D4A 0%, #3D2D4A 100%);
+  border: 1px solid #FF85A2;
+}
+
+.luna-warning {
+  background: linear-gradient(135deg, #FFF5F0 0%, #FFE8D6 100%);
+  border: 1px solid #FFB366;
+}
+
+.dark .luna-warning {
+  background: linear-gradient(135deg, #2D2D4A 0%, #3D3D2D 100%);
+  border: 1px solid #FFB366;
+}

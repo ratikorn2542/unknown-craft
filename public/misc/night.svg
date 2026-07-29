@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 600" width="1920" height="600">
+  <!-- Night sky gradient -->
+  <defs>
+    <linearGradient id="skyNight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0f23"/>
+      <stop offset="40%" style="stop-color:#1a1a2e"/>
+      <stop offset="70%" style="stop-color:#16213e"/>
+      <stop offset="100%" style="stop-color:#1a1a2e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1920" height="600" fill="url(#skyNight)"/>
+
+  <!-- Moon -->
+  <circle cx="300" cy="150" r="60" fill="#F5F5DC"/>
+  <circle cx="320" cy="140" r="50" fill="#0f0f23"/>
+  <circle cx="280" cy="160" r="8" fill="#0f0f23" opacity="0.3"/>
+  <circle cx="260" cy="180" r="5" fill="#0f0f23" opacity="0.3"/>
+  <circle cx="310" cy="170" r="6" fill="#0f0f23" opacity="0.3"/>
+
+  <!-- Stars (different sizes for depth) -->
+  <g fill="#FFFFFF">
+    <!-- Large stars -->
+    <circle cx="500" cy="80" r="2.5" opacity="0.9"/>
+    <circle cx="800" cy="120" r="2.5" opacity="0.85"/>
+    <circle cx="1100" cy="60" r="2.5" opacity="0.95"/>
+    <circle cx="1400" cy="100" r="2.5" opacity="0.8"/>
+    <circle cx="1700" cy="70" r="2.5" opacity="0.9"/>
+    <circle cx="1850" cy="140" r="2.5" opacity="0.85"/>
+
+    <!-- Medium stars -->
+    <circle cx="150" cy="200" r="2" opacity="0.8"/>
+    <circle cx="350" cy="280" r="2" opacity="0.75"/>
+    <circle cx="550" cy="180" r="2" opacity="0.85"/>
+    <circle cx="650" cy="300" r="2" opacity="0.7"/>
+    <circle cx="850" cy="220" r="2" opacity="0.8"/>
+    <circle cx="950" cy="350" r="2" opacity="0.75"/>
+    <circle cx="1050" cy="150" r="2" opacity="0.85"/>
+    <circle cx="1200" cy="280" r="2" opacity="0.7"/>
+    <circle cx="1350" cy="200" r="2" opacity="0.8"/>
+    <circle cx="1500" cy="320" r="2" opacity="0.75"/>
+    <circle cx="1600" cy="180" r="2" opacity="0.85"/>
+    <circle cx="1800" cy="250" r="2" opacity="0.7"/>
+
+    <!-- Small stars -->
+    <circle cx="100" cy="120" r="1.5" opacity="0.7"/>
+    <circle cx="200" cy="300" r="1.5" opacity="0.65"/>
+    <circle cx="400" cy="150" r="1.5" opacity="0.7"/>
+    <circle cx="450" cy="320" r="1.5" opacity="0.6"/>
+    <circle cx="600" cy="100" r="1.5" opacity="0.7"/>
+    <circle cx="700" cy="250" r="1.5" opacity="0.65"/>
+    <circle cx="750" cy="350" r="1.5" opacity="0.6"/>
+    <circle cx="900" cy="180" r="1.5" opacity="0.7"/>
+    <circle cx="1000" cy="280" r="1.5" opacity="0.65"/>
+    <circle cx="1150" cy="100" r="1.5" opacity="0.7"/>
+    <circle cx="1250" cy="350" r="1.5" opacity="0.6"/>
+    <circle cx="1300" cy="150" r="1.5" opacity="0.7"/>
+    <circle cx="1450" cy="250" r="1.5" opacity="0.65"/>
+    <circle cx="1550" cy="120" r="1.5" opacity="0.7"/>
+    <circle cx="1750" cy="300" r="1.5" opacity="0.6"/>
+    <circle cx="1880" cy="200" r="1.5" opacity="0.7"/>
+
+    <!-- Tiny stars (distant) -->
+    <circle cx="80" cy="180" r="1" opacity="0.5"/>
+    <circle cx="180" cy="90" r="1" opacity="0.45"/>
+    <circle cx="280" cy="250" r="1" opacity="0.5"/>
+    <circle cx="380" cy="200" r="1" opacity="0.45"/>
+    <circle cx="480" cy="280" r="1" opacity="0.5"/>
+    <circle cx="580" cy="220" r="1" opacity="0.45"/>
+    <circle cx="680" cy="180" r="1" opacity="0.5"/>
+    <circle cx="780" cy="300" r="1" opacity="0.45"/>
+    <circle cx="880" cy="120" r="1" opacity="0.5"/>
+    <circle cx="980" cy="200" r="1" opacity="0.45"/>
+    <circle cx="1080" cy="300" r="1" opacity="0.5"/>
+    <circle cx="1180" cy="180" r="1" opacity="0.45"/>
+    <circle cx="1280" cy="250" r="1" opacity="0.5"/>
+    <circle cx="1380" cy="100" r="1" opacity="0.45"/>
+    <circle cx="1480" cy="300" r="1" opacity="0.5"/>
+    <circle cx="1580" cy="220" r="1" opacity="0.45"/>
+    <circle cx="1680" cy="150" r="1" opacity="0.5"/>
+    <circle cx="1780" cy="280" r="1" opacity="0.45"/>
+    <circle cx="1880" cy="320" r="1" opacity="0.5"/>
+  </g>
+
+  <!-- Shooting star (rare) -->
+  <g opacity="0.8">
+    <line x1="1200" y1="50" x2="1250" y2="80" stroke="#FFFFFF" stroke-width="2"/>
+    <line x1="1200" y1="50" x2="1180" y2="40" stroke="#FFFFFF" stroke-width="1" opacity="0.5"/>
+  </g>
+
+  <!-- Silhouette mountains -->
+  <polygon points="0,450 150,350 300,420 500,300 700,400 900,280 1100,380 1300,260 1500,370 1700,290 1920,360 1920,600 0,600" fill="#0a0a15"/>
+  <polygon points="0,480 100,400 250,460 450,370 650,450 850,350 1050,440 1250,330 1450,420 1650,340 1850,410 1920,450 1920,600 0,600" fill="#0f0f23"/>
+
+  <!-- Pixel pine trees silhouette -->
+  <g fill="#0a0a15">
+    <!-- Tree 1 -->
+    <polygon points="80,520 100,440 120,520"/>
+    <polygon points="90,520 100,470 110,520"/>
+    <rect x="96" y="520" width="8" height="25" fill="#0a0a15"/>
+
+    <!-- Tree 2 -->
+    <polygon points="250,530 275,420 300,530"/>
+    <polygon points="262,530 275,460 288,530"/>
+    <polygon points="270,530 275,480 280,530"/>
+    <rect x="271" y="530" width="8" height="30" fill="#0a0a15"/>
+
+    <!-- Tree 3 -->
+    <polygon points="500,520 520,440 540,520"/>
+    <polygon points="510,520 520,470 530,520"/>
+    <rect x="516" y="520" width="8" height="25" fill="#0a0a15"/>
+
+    <!-- Tree 4 -->
+    <polygon points="750,530 780,400 810,530"/>
+    <polygon points="760,530 780,440 800,530"/>
+    <polygon points="770,530 780,470 790,530"/>
+    <rect x="776" y="530" width="8" height="30" fill="#0a0a15"/>
+
+    <!-- Tree 5 -->
+    <polygon points="1100,520 1120,440 1140,520"/>
+    <polygon points="1110,520 1120,470 1130,520"/>
+    <rect x="1116" y="520" width="8" height="25" fill="#0a0a15"/>
+
+    <!-- Tree 6 -->
+    <polygon points="1350,530 1380,400 1410,530"/>
+    <polygon points="1360,530 1380,440 1400,530"/>
+    <polygon points="1370,530 1380,470 1390,530"/>
+    <rect x="1376" y="530" width="8" height="30" fill="#0a0a15"/>
+
+    <!-- Tree 7 -->
+    <polygon points="1600,520 1620,440 1640,520"/>
+    <polygon points="1610,520 1620,470 1630,520"/>
+    <rect x="1616" y="520" width="8" height="25" fill="#0a0a15"/>
+
+    <!-- Tree 8 -->
+    <polygon points="1850,530 1880,400 1910,530"/>
+    <polygon points="1860,530 1880,440 1900,530"/>
+    <polygon points="1870,530 1880,470 1890,530"/>
+    <rect x="1876" y="530" width="8" height="30" fill="#0a0a15"/>
+  </g>
+
+  <!-- Ground -->
+  <rect x="0" y="550" width="1920" height="50" fill="#0a0a15"/>
+  <rect x="0" y="545" width="1920" height="8" fill="#0f0f23"/>
+</svg>

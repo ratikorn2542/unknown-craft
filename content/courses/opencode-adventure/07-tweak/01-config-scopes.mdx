@@ -1,0 +1,40 @@
+# Config Scopes
+
+## Config Scopes คืออะไร?
+
+Config Scopes คือ **ระดับของการตั้งค่า** ที่มีผลต่างกัน
+
+| Scope | ระดับ | ผล |
+|-------|-------|-----|
+| **Global** | ทั้งระบบ | ใช้กับทุกโปรเจค |
+| **Project** | โปรเจคนี้ | ใช้กับโปรเจคปัจจุบัน |
+| **Session** | ครั้งนี้ | ใช้ครั้งเดียว |
+
+## การตั้งค่า
+
+### Global (ทั้งระบบ)
+
+```bash
+opencode config set default-model gpt-4
+```
+
+### Project (โปรเจคนี้)
+
+สร้างไฟล์ `opencode.config.json` ในโปรเจค:
+
+```json
+{
+  "default-model": "gpt-4",
+  "context-size": "large"
+}
+```
+
+### Session (ครั้งนี้)
+
+```bash
+/opencode set context-size large
+```
+
+## ลำดับความสำคัญ
+
+Session > Project > Global

@@ -1,0 +1,46 @@
+# Notion MCP
+
+## Notion MCP คืออะไร?
+
+Notion MCP ช่วยให้ Opencode สามารถ:
+- 📄 อ่าน/เขียน Notion pages
+- 📅 จัดการ databases
+- 🔍 ค้นหา content ใน Notion
+
+## การติดตั้ง
+
+### ขั้นตอนที่ 1: สร้าง Notion Integration
+
+1. ไปที่ https://www.notion.so/my-integrations
+2. สร้าง Integration ใหม่
+3. คัดลอก Internal Integration Token
+
+### ขั้นตอนที่ 2: แชร์ Database
+
+แชร์ Notion pages ที่ต้องการให้ Integration เข้าถึง
+
+### ขั้นตอนที่ 3: ตั้งค่าใน Opencode
+
+```json
+{
+  "mcpServers": {
+    "notion": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-notion"],
+      "env": {
+        "NOTION_API_KEY": "your-api-key"
+      }
+    }
+  }
+}
+```
+
+## การใช้งาน
+
+```
+@opencode สร้าง todo ใน Notion ให้หน่อย
+```
+
+```
+@opencode ดึงข้อมูลจาก Notion database มาให้หน่อย
+```
