@@ -21,7 +21,7 @@ export default function Home() {
 
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
           <div className="mb-6">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 tracking-wider" style={{ textShadow: '4px 4px 0px #e94560, 8px 8px 0px #000' }}>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 tracking-wider drop-shadow-[4px_4px_0px_#e94560] drop-shadow-[8px_8px_0px_#000]">
               UNKNOWN CRAFT
             </h1>
             <div className="flex items-center justify-center gap-3">

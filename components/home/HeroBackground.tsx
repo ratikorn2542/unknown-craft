@@ -31,8 +31,7 @@ function Cloud({ src, className }: CloudProps) {
       <img
         src={src}
         alt=""
-        className="w-full h-full object-contain"
-        style={{ imageRendering: 'pixelated' }}
+        className="w-full h-full object-contain image-rendering-pixelated"
       />
     </div>
   );
@@ -48,8 +47,7 @@ function Star({ className }: StarProps) {
       <img
         src="/misc/star.svg"
         alt=""
-        className="w-full h-full object-contain"
-        style={{ imageRendering: 'pixelated' }}
+        className="w-full h-full object-contain image-rendering-pixelated"
       />
     </div>
   );
@@ -66,8 +64,7 @@ function Leaf({ className }: LeafProps) {
       <img
         src={leafType}
         alt=""
-        className="w-full h-full object-contain"
-        style={{ imageRendering: 'pixelated' }}
+        className="w-full h-full object-contain image-rendering-pixelated"
       />
     </div>
   );
@@ -158,9 +155,8 @@ function ForestScene() {
       {fireflies.map((fly, index) => (
         <div
           key={`fly-${index}`}
-          className={`absolute rounded-full bg-[#FFFF00] ${fly.className}`}
+          className={`absolute rounded-full bg-[#FFFF00] shadow-[0_0_6px_2px_rgba(255,255,0,0.5)] ${fly.className}`}
           style={{
-            boxShadow: '0 0 6px 2px rgba(255, 255, 0, 0.5)',
             animationDelay: fly.delay,
           }}
         />
@@ -200,8 +196,7 @@ export default function HeroBackground() {
       <img
         src={sceneImages[scene]}
         alt=""
-        className="absolute inset-0 w-full h-full object-cover"
-        style={{ imageRendering: 'auto' }}
+        className="absolute inset-0 w-full h-full object-cover image-rendering-auto"
       />
 
       {/* Animated elements */}

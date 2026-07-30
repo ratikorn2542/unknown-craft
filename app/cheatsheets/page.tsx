@@ -83,8 +83,7 @@ export default function CheatsheetsPage() {
             <div className="mt-3 flex items-center gap-2">
               <div className="h-1 flex-1 bg-[#2d2d44] rounded-full overflow-hidden">
                 <div
-                  className="h-full bg-[#e94560] rounded-full"
-                  style={{ width: '10%' }}
+                  className="h-full bg-[#e94560] rounded-full w-[10%]"
                 />
               </div>
               <span className="text-xs text-[#8b8b9a]">Soon</span>
