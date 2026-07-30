@@ -51,7 +51,7 @@ export default function ProfilePage() {
     <div className="min-h-screen relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-[#0f0f23] via-[#1a1a2e] to-[#16213e]" />
 
-      <div className="relative z-10 max-w-4xl mx-auto px-6 md:px-8 py-12 md:py-16">
+      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 md:px-8 py-12 md:py-16">
         <div className="text-center mb-16">
           <div className="relative inline-block mb-6">
             <div className="w-36 h-36 rounded-lg p-1 border-4 border-[#f39c12] shadow-[8px_8px_0px_0px_#e94560]">
@@ -134,8 +134,8 @@ export default function ProfilePage() {
               </h2>
             </div>
 
-            <div className="relative pl-8">
-              <div className="absolute left-3 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#e94560] via-[#f39c12] to-[#e94560]" />
+            <div className="relative pl-4 sm:pl-8 pr-2">
+              <div className="absolute left-2 sm:left-3 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#e94560] via-[#f39c12] to-[#e94560]" />
 
               <div className="space-y-8">
                 {workExperience.map((work, index) => (
@@ -190,8 +190,8 @@ export default function ProfilePage() {
               </h2>
             </div>
 
-            <div className="relative pl-8">
-              <div className="absolute left-3 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#f39c12] to-[#f39c12]" />
+            <div className="relative pl-4 sm:pl-8 pr-2">
+              <div className="absolute left-2 sm:left-3 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#f39c12] to-[#f39c12]" />
 
               <div className="space-y-6">
                 {education.map((edu, index) => (
@@ -240,7 +240,7 @@ export default function ProfilePage() {
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-2 gap-4 sm:gap-6">
               {skills.map((skill, index) => (
                 <Card key={index} className="bg-[#0f0f23] border-2 border-[#2d2d44]">
                   <CardContent className="p-6 md:p-8">

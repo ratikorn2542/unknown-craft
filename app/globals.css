@@ -55,28 +55,6 @@
   --luna-border: #f39c12;
 }
 
-.colorful {
-  --background: #1a1a2e;
-  --foreground: #ffffff;
-  --card: #0f0f23;
-  --card-foreground: #ffffff;
-  --primary: #e94560;
-  --primary-foreground: #ffffff;
-  --secondary: #16213e;
-  --secondary-foreground: #ffffff;
-  --muted: #16213e;
-  --muted-foreground: #9ca3af;
-  --accent: #f39c12;
-  --accent-foreground: #000000;
-  --border: #2d2d44;
-  --ring: #00d9ff;
-
-  --momo-bg: #16213e;
-  --momo-border: #e94560;
-  --luna-bg: #16213e;
-  --luna-border: #f39c12;
-}
-
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);

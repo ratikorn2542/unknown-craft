@@ -2,8 +2,6 @@
 
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { oneDark } from 'react-syntax-highlighter/dist/cjs/styles/prism';
-import { oneLight } from 'react-syntax-highlighter/dist/cjs/styles/prism';
-import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
 
 interface CodeBlockClientProps {
@@ -12,7 +10,6 @@ interface CodeBlockClientProps {
 }
 
 export function CodeBlockClient({ language, children }: CodeBlockClientProps) {
-  const { theme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -29,7 +26,7 @@ export function CodeBlockClient({ language, children }: CodeBlockClientProps) {
     );
   }
 
-  const codeStyle = theme === 'dark' || theme === 'colorful' ? oneDark : oneLight;
+  const codeStyle = oneDark;
 
   return (
     <div className="rounded-lg overflow-hidden mb-6">

@@ -1,6 +1,7 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { CourseMeta } from '@/types';
-import { LevelBadge, StatusBadge, TagBadge } from '@/components/ui/Badge';
+import { LevelBadge, StatusBadge } from '@/components/ui/Badge';
 
 interface CourseCardProps {
   course: CourseMeta;
@@ -26,22 +27,25 @@ export function CourseCard({ course }: CourseCardProps) {
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
             </>
           ) : course.slug === 'opencode-adventure' ? (
-            <img
-              src={`/${encodeURIComponent('opencode-adventure.png')}`}
+            <Image
+              src="/opencode-adventure.png"
               alt={course.title}
-              className="w-full h-full object-cover"
+              fill
+              className="object-cover"
             />
           ) : course.slug === 'ai-for-everyone' ? (
-            <img
-              src={`/${encodeURIComponent('ai-for-everyone.png')}`}
+            <Image
+              src="/ai-for-everyone.png"
               alt={course.title}
-              className="w-full h-full object-cover"
+              fill
+              className="object-cover"
             />
           ) : course.slug === 'react-adventure' ? (
-            <img
-              src={`/${encodeURIComponent('react-adventure.png')}`}
+            <Image
+              src="/react-adventure.png"
               alt={course.title}
-              className="w-full h-full object-cover"
+              fill
+              className="object-cover"
             />
           ) : (
             <div className="absolute inset-0 bg-[#16213e] flex items-center justify-center">

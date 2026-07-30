@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Button } from '@/components/ui/Button';
 import { LevelBadge } from '@/components/ui/Badge';
 import { courses } from '@/lib/courses';
@@ -76,22 +77,28 @@ export default function Home() {
 
                   <div className="aspect-[4/3] relative overflow-hidden">
                     {course.slug === 'opencode-adventure' ? (
-                      <img
-                        src={`/${encodeURIComponent('opencode-adventure.png')}`}
+                      <Image
+                        src="/opencode-adventure.png"
                         alt={course.title}
-                        className="w-full h-full object-cover"
+                        fill
+                        className="object-cover"
+                        priority
                       />
                     ) : course.slug === 'ai-for-everyone' ? (
-                      <img
-                        src={`/${encodeURIComponent('ai-for-everyone.png')}`}
+                      <Image
+                        src="/ai-for-everyone.png"
                         alt={course.title}
-                        className="w-full h-full object-cover"
+                        fill
+                        className="object-cover"
+                        priority
                       />
                     ) : course.slug === 'react-adventure' ? (
-                      <img
-                        src={`/${encodeURIComponent('react-adventure.png')}`}
+                      <Image
+                        src="/react-adventure.png"
                         alt={course.title}
-                        className="w-full h-full object-cover"
+                        fill
+                        className="object-cover"
+                        priority
                       />
                     ) : (
                       <div className="absolute inset-0 bg-[#16213e] flex items-center justify-center">

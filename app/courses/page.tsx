@@ -1,5 +1,4 @@
 import { getAllCourseMeta } from '@/lib/courses';
-import { CourseCard } from '@/components/course/CourseCard';
 import { CourseFilterClient } from '@/components/course/CourseFilterClient';
 
 export default function CoursesPage() {

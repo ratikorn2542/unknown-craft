@@ -51,7 +51,7 @@ export function CardDescription({ children, className = '' }: { children: ReactN
 
 export function CardContent({ children, className = '' }: { children: ReactNode; className?: string }) {
   return (
-    <div className={`p-6 pt-0 ${className}`}>
+    <div className={`p-6 ${className}`}>
       {children}
     </div>
   );
